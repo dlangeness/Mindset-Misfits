@@ -1,2 +1,12 @@
 .navbar {
-    background-color: #74B9C9
+    background-color: #74B9C9;
+}
+
+header {
+    background-size: 100%;
+}
+
+.jumbotron {
+    background-image: url(../images/mindset-misfit-header.jpg);
+    height: 250px;
+}
