@@ -8,5 +8,5 @@ header {
 
 .jumbotron {
     background-image: url(../images/mindset-misfit-header.jpg);
-    height: 250px;
+    background-repeat: no-repeat;
 }
