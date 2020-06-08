@@ -7,3 +7,19 @@ $color-black-transparent: ;
 
 $body-font: ;
 $header-font: ;
+
+
+
+.jumbotron {
+    background-image: url(../images/misfitsheader.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 250px;
+ 
+}
+
+span {
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
