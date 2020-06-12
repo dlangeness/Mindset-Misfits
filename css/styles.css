@@ -66,3 +66,6 @@ span {
     transform: rotateX(180deg);
   }
 
+  .site-footer {
+    background-image: linear-gradient(#CEC8FF, white);
+    padding: 20px 0; }
