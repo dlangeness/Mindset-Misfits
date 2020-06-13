@@ -4,13 +4,29 @@
 .jumbotron {
     background-image: url(../images/mindset-misfits-header-2.jpg_large);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
+    background-color: white;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
 }
 
 span {
     margin-right: 30px;
     font-size: 20px;
     font-weight: bold;
+    vertical-align: middle;
+}
+
+nav {
+  background-color: #95ABFF;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 #makeLifeBetter {
@@ -18,6 +34,11 @@ span {
     background-size: 100% 100%;
     padding: 150px;
     text-align: center;
+    margin-top: 40px;
+}
+
+#makeLifeBetter button {
+  background-color: #95ABFF;;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -26,7 +47,7 @@ span {
     width: 300px;
     height: 200px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */;
   }
   
   /* This container is needed to position the front and back side */
@@ -55,17 +76,122 @@ span {
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
     color: black;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
     transform: rotateX(180deg);
+  }
+
+  #cardOne .flip-card-front {
+    background-color: #95ABFF;;
+    color: white;
+  }
+
+  #cardOne .flip-card-back {
+    background-color: #ABEBF4;
+  }
+
+  #cardTwo .flip-card-front {
+    background-color: #ABEBF4;
+  }
+
+  #cardTwo .flip-card-back {
+    background-color: #95ABFF;
+    color: white;
+  }
+
+  #cardThree .flip-card-front {
+    background-color: #95ABFF;
+    color: white;
+  }
+
+  #cardThree .flip-card-back {
+    background-color:#ABEBF4;
   }
 
   .site-footer {
     background-image: linear-gradient(#CEC8FF, white);
-    padding: 20px 0; }
+    padding: 20px 0; 
+  }
+
+    #theLatest{
+      margin: 40px auto 50px auto;
+    }
+    
+    aside {
+      border: black solid 1px;
+      padding: 10px;
+    }
+      
+
+    ul {
+      list-style: none;
+    }
+
+    #meetMisfits {
+      border: black solid 1px;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    
+    }
+    
+    hr {
+      border: black solid 1px;
+    }
+
+  .dropdown {
+    margin-top: 50px;
+    
+  }
+
+  #personalDevelopment {
+    border: black solid 1px;
+  }
+
+  #goalSetting {
+    border: black solid 1px;
+    margin-top: 100px;
+  }
+
+  #inspiration {
+    border: black solid 1px;
+    margin-top: 100px;
+
+  }
+
+  #habitsRoutines {
+    border: black solid 1px;
+    margin-top: 100px;
+
+  }
+
+  #productReviews {
+    border: black solid 1px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+#contact {
+  background-color: #95ABFF;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+#tracey {
+  border: black solid 2px;
+  border-radius: 8px;
+  background-color: #ABEBF4;
+}
+
+#darryl {
+  border: black solid 2px;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #339EFF;
+}

@@ -24,7 +24,7 @@
         </span>
     </header>
    
-    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+    <nav class="navbar navbar-expand-sm justify-content-center">
         <ul class="navbar-nav ">
             <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item">
@@ -43,11 +43,6 @@
                 <a class="nav-link" href="contact.html">Contact</a>
             </li>
         </ul>
-        <!-- <span class="navbar-text ml-auto pull-right">
-            <a role="button" id="loginButton">
-                <i class="fa fa-sign-in"></i>Login
-            </a> -->
-        </span>
     </nav>
 
     <div id="loginModal" class="modal fade" role="dialog">
@@ -105,87 +100,95 @@
             </div>
         </div>
         <div class="row">
-            <div class="card-deck">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Most Recent Post</h2>
-                        <p>This is the 2nd most recent post</p>
-                        <a  href="#" class="btn btn-md">Read more</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Second Most Recent Post</h2>
-                        <p>This is the 2nd most recent post</p>
-                        <a href="#" class="btn btn-md">Read more</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Third Most Recent Post</h2>
-                        <p>This is the 2nd most recent post</p>
-                        <a href="#" class="btn btn-md">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <aside>
-        <h3>Subscribe To The Blog</h3>
-            <form action="#" method="POST">
-                <label for="fname">First Name:</label><br>
-                <input type="text" name="fname" id="fname" placeholder="Enter first name"><br>
-                <label for="lname">Last Name:</label><br>
-                <input type="text" name="lname" id="lname" placeholder="Enter last name"><br>
-                <label for="email">Email Address:</label><br>
-                <input type="email" name="email" id="email" placeholder="Enter email"><br><br>
-                <input type="submit" value="Click To Subscribe">
-            </form>
-        <h3>Archives</h3>
-            <ul> <a href="archives/june-2020.html">June 2020</a>
-                <a href="archives/may=2020.html">May 2020</a>
-            </ul>
-       
-    </aside>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
+            <div class="col-md-9">
                 <div class="card-deck">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h1 align="center" >The Blog</h1>
-                                <img src="" alt="" style="width:300px;height:300px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>The Blog</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
-                            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Most Recent Post</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet blandit hendrerit. In vitae pretium nisi, sed condimentum purus. Phasellus et luctus purus. Vestibulum quis.</p>
+                            <a  href="#" class="btn btn-md">Read more</a>
                         </div>
                     </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h1 align="center">Find Your Passion</h1>
-                                <img src="" alt="" style="width:300px;height:300px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Find Your Passion</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
-                            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Second Most Recent Post</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet blandit hendrerit. In vitae pretium nisi, sed condimentum purus. Phasellus et luctus purus. Vestibulum quis.</p>
+                            <a href="#" class="btn btn-md">Read more</a>
                         </div>
                     </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h1 align="center">Work With Us</h1>
-                                <img src="" alt="" style="width:300px;height:300px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Work With Us</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
-                            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Third Most Recent Post</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet blandit hendrerit. In vitae pretium nisi, sed condimentum purus. Phasellus et luctus purus. Vestibulum quis.</p>
+                            <a href="#" class="btn btn-md">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <aside>
+                    <h3>Subscribe To The Blog</h3>
+                        <form action="#" method="POST">
+                            <label for="fname">First Name:</label><br>
+                            <input type="text" name="fname" id="fname" placeholder="Enter first name"><br>
+                            <label for="lname">Last Name:</label><br>
+                            <input type="text" name="lname" id="lname" placeholder="Enter last name"><br>
+                            <label for="email">Email Address:</label><br>
+                            <input type="email" name="email" id="email" placeholder="Enter email"><br><br>
+                            <input type="submit" value="Click To Subscribe">
+                        </form><br><hr>
+                    <h3 align="center">Archives</h3>
+                        <ul> 
+                            <li><a href="archives/june-2020.html">June 2020</a></li>
+                            <li><a href="archives/may=2020.html">May 2020</a></li>
+                        </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="cardOne" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1 align="center" >The Blog</h1>
+                            <img src="" alt=""> 
+                        </div>
+                    
+                        <div class="flip-card-back">
+                            <h1>The Blog</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="cardTwo" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1 align="center">Find Your Passion</h1>
+                            <img src="" alt="">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Find Your Passion</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="cardThree" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1 align="center">Work With Us</h1>
+                            <img src="" alt="">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Work With Us</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</p>
                         </div>
                     </div>
                 </div>
@@ -193,14 +196,14 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div id="meetMisfits" class="container">
         <div class="row">
             <div class="col-sm-3">
                 <img src="#" alt="Picture of Darryl and Tracey">
             </div>
-            <div class="col">
-                <h2>Meet The Misfits</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <div class="col-sm-9">
+                <h2 align="center"><u>Meet The Misfits</u></h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et erat quis purus efficitur ultrices vitae nec ante. Maecenas ipsum nibh, consequat eget ligula sed, luctus congue ligula. Vestibulum eget mi nec tellus venenatis elementum. Curabitur placerat odio est, non mollis augue eleifend a. Praesent et neque sed massa tempor auctor at ut leo. Vestibulum tristique gravida fringilla. Nulla tortor arcu, volutpat a risus a, iaculis maximus ex. Nulla porttitor sollicitudin fringilla. Aliquam convallis augue ac lacinia dignissim. Aliquam arcu purus, consequat et dolor ac, tincidunt rutrum velit. Cras imperdiet massa risus, at dictum nibh vulputate ut. Nunc hendrerit odio.</p>
             </div>
         </div>
     </div>
