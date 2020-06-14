@@ -1,0 +1,118 @@
+[Version]
+Signature="$Windows NT$"
+Provider="Brother"
+LayoutFile=layout.inf
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+DriverVer=04/20/2011,01.00.00.00
+CatalogFile=BR9010_2.CAT
+
+;
+; The Manufacturer section lists all of the manufacturers that we will
+; display in the Dialog box
+
+[Manufacturer]
+%Company%=DriverName,NTamd64
+
+[DriverName.NTamd64]
+"Brother DCP-9010CN BR-Script3"=BR901D_2.PPD,Brother_BR-Script3
+"Brother DCP-9015CN BR-Script3"=BR9015D_2.PPD,Brother_BR-Script3
+"Brother MFC-9010CN BR-Script3"=BR901M_2.PPD,Brother_BR-Script3
+"Brother MFC-9015CN BR-Script3"=BR9015M_2.PPD,Brother_BR-Script3
+"Brother MFC-9120CN BR-Script3"=BR9120_2.PPD,Brother_BR-Script3
+"Brother MFC-9125CN BR-Script3"=BR9125_2.PPD,Brother_BR-Script3
+"Brother MFC-9320CW BR-Script3"=BR9320_2.PPD,Brother_BR-Script3
+"Brother MFC-9325CW BR-Script3"=BR9325_2.PPD,Brother_BR-Script3
+
+;
+; Installer Sections
+;
+; These sections control file installation, and reference all files that
+; need to be copied. If the section name will be assumed to be the driver
+; file, unless there is an explicit DriverFile section listed.
+;
+
+[BR901D_2.PPD]
+CopyFiles=@BR901D_2.PPD,PSCRIPT
+DataSection=PSCRIPT_DATA
+Include=NTPRINT.INF
+Needs=PSCRIPT.OEM
+
+[BR9015D_2.PPD]
+CopyFiles=@BR9015D_2.PPD,PSCRIPT
+DataSection=PSCRIPT_DATA
+Include=NTPRINT.INF
+Needs=PSCRIPT.OEM
+
+[BR901M_2.PPD]
+CopyFiles=@BR901M_2.PPD,PSCRIPT
+DataSection=PSCRIPT_DATA
+Include=NTPRINT.INF
+Needs=PSCRIPT.OEM
+
+[BR9015M_2.PPD]
+CopyFiles=@BR9015M_2.PPD,PSCRIPT
+DataSection=PSCRIPT_DATA
+Include=NTPRINT.INF
+Needs=PSCRIPT.OEM
+
+[BR9120_2.PPD]
+CopyFiles=@BR9120_2.PPD,PSCRIPT
+DataSection=PSCRIPT_DATA
+Include=NTPRINT.INF
+Needs=PSCRIPT.OEM
+
+[BR9125_2.PPD]
+CopyFiles=@BR9125_2.PPD,PSCRIPT
+DataSection=PSCRIPT_DATA
+Include=NTPRINT.INF
+Needs=PSCRIPT.OEM
+
+[BR9320_2.PPD]
+CopyFiles=@BR9320_2.PPD,PSCRIPT
+DataSection=PSCRIPT_DATA
+Include=NTPRINT.INF
+Needs=PSCRIPT.OEM
+
+[BR9325_2.PPD]
+CopyFiles=@BR9325_2.PPD,PSCRIPT
+DataSection=PSCRIPT_DATA
+Include=NTPRINT.INF
+Needs=PSCRIPT.OEM
+
+; Copy Sections
+;
+; Lists of files that are actually copied. These sections are referenced
+; from the installer sections, above. Only create a section if it contains
+; two or more files (if we only copy a single file, identify it in the
+; installer section, using the @filename notation)
+;
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+[SourceDisksNames.amd64]
+1="Brother Color PS Printer Driver Disk","",,
+
+[SourceDisksNames.x86]
+1="Brother Color PS Printer Driver Disk","",,
+
+[SourceDisksFiles]
+BR901D_2.PPD   = 1
+BR9015D_2.PPD   = 1
+BR901M_2.PPD   = 1
+BR9015M_2.PPD   = 1
+BR9120_2.PPD   = 1
+BR9125_2.PPD   = 1
+BR9320_2.PPD   = 1
+BR9325_2.PPD   = 1
+
+;
+; Localizable Strings
+;
+[Strings]
+Company="Brother"
+Floppy="Brother BR-Script PPDs Disk"
+CLASSNAME="Printer"
+PJL_MONITOR="PJL Language Monitor,PJLMON.DLL"
+PS_MONITOR="PostScript Language Monitor,PSMON.DLL" 

@@ -85,16 +85,20 @@ nav {
   }
 
   #cardOne .flip-card-front {
-    background-color: #95ABFF;;
     color: white;
+    background-image: url(../images/blog-flip.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   #cardOne .flip-card-back {
-    background-color: #ABEBF4;
-  }
+background-image: url(../images/keyboard-flip.jpg);  
+    color: white;
+}
 
   #cardTwo .flip-card-front {
     background-color: #ABEBF4;
+    background
   }
 
   #cardTwo .flip-card-back {
@@ -103,13 +107,16 @@ nav {
   }
 
   #cardThree .flip-card-front {
-    background-color: #95ABFF;
-    color: white;
+background-image: url(../images/work-with-flip-front.jpg);    
+background-repeat: no-repeat;
+background-position: center;
+color: black;
   }
 
   #cardThree .flip-card-back {
-    background-color:#ABEBF4;
-  }
+background-image: url(../images/work-with-flip.jpg); 
+background-position: center; 
+}
 
   .site-footer {
     background-image: linear-gradient(#CEC8FF, white);
@@ -193,5 +200,9 @@ nav {
   border-radius: 8px;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #339EFF;
+}
+
+/* blog.html */
+body {
+  background-color: #ABEBF4;
 }
