@@ -2,7 +2,7 @@
 
 
 .jumbotron {
-    background-image: url(../images/mindset-misfits-header-2.jpg_large);
+    background-image: url(../images/mindset-misfit-header.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: white;
@@ -195,11 +195,19 @@ background-position: center;
   background-color: #ABEBF4;
 }
 
+#tracey h3 {
+  font-size: 36px;;
+}
+
 #darryl {
   border: black solid 2px;
   border-radius: 8px;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+#darryl h3 {
+  font-size: 36px;
 }
 
 /* blog.html */
